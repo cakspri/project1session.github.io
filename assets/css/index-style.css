@@ -1,0 +1,134 @@
+.container {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  padding: 0px 0px 0px 0px !important;
+}
+
+body {
+  background: url('../background-img.jpg') no-repeat center center fixed;
+}
+
+.title-divider {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: #03045E;
+  margin-top: 0px;
+}
+
+/* Sidebar Style */
+
+.toggle-btn-container {
+  z-index: 3;
+  position: absolute;
+  margin: 30px 0px 0px 20px;
+}
+
+i.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.sidebar-toggler {
+  z-index: 2;
+  position: absolute;
+  color: white;
+  background-color: #03045E;
+  padding-top: 6px;
+  border-radius: 10px;
+}
+
+.sidebar-toggler:hover {
+  cursor: pointer;
+}
+
+.ui.inverted.menu {
+  background-color: #03045E;
+}
+
+/* End of sidebar style */
+
+.row2 {
+  width: 300px;
+  height: 200px;
+}
+
+.about {
+  margin-top: 250px;
+  margin-left: 640px;
+  height: 300px;
+  width: 600px;
+}
+
+.pictures {
+  z-index: 1;
+  position: absolute;
+  display: inline;
+  margin-top: 90px !important;
+}
+
+.pref-btn {
+  border: #03045E solid 3px;
+  border-radius: 10px;
+  background-color: #03045E;
+  color: white;
+  height: 40px;
+  width: 125px;
+  margin-left: 115px;
+}
+
+.sess-btn {
+  border: #03045E solid 3px;
+  border-radius: 10px;
+  background-color: #03045E;
+  color: white;
+  height: 40px;
+  width: 100px;
+  margin-left: 30px;
+}
+
+.pref-btn:hover {
+  background-color: transparent;
+  color: #03045E;
+  cursor: pointer;
+}
+
+.sess-btn:hover {
+  background-color: transparent;
+  color: #03045E;
+  cursor: pointer;
+}
+
+.sessions-title {
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+}
+
+.row {
+  position: absolute !important;
+  text-align: center !important;
+  padding-top: 0px !important;
+}
+
+/* Style for mobile */
+
+@media only screen and (max-width: 576px) {
+  .sessions-title {
+    font-size: 60px;
+    padding-top: 10px;
+  }
+  .about {
+    margin: 200px 0px 0px 0px;
+  }
+  .picture-img {
+    display: none;
+  }
+  .pref-btn {
+    margin: 20px auto 0px auto;
+  }
+}

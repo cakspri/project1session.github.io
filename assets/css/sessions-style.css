@@ -1,0 +1,275 @@
+body {
+  background: url('../background-img.jpg') no-repeat center center fixed;
+}
+
+.title-divider {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: #03045E;
+  margin-top: 0px;
+}
+
+/* Sidebar Style */
+
+.toggle-btn-container {
+  z-index: 3;
+  position: absolute;
+  margin: 30px 0px 0px 20px;
+}
+
+i.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.sidebar-toggler {
+  z-index: 3;
+  position: absolute;
+  color: white;
+  background-color: #03045E;
+  padding-top: 6px;
+  border-radius: 10px;
+}
+
+.sidebar-toggler:hover {
+  cursor: pointer;
+}
+
+.ui.inverted.menu {
+  background-color: #03045E;
+  box-shadow: 2px 2px white !important;
+}
+
+/* End of sidebar style */
+
+.session-page-title {
+  padding-top: 40px;
+}
+
+.sessions-title {
+  z-index: 2;
+  position: absolute;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+}
+
+.header {
+  text-align: center;
+}
+
+.go-btn {
+  width: 100px;
+  margin-left: 80px !important;
+}
+
+.wave-near-me {
+  width: 300px !important;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 560px !important;
+}
+
+.find-by-county-select {
+  font-size: 20px !important;
+  width: 200px !important;
+  margin-top: 20px;
+  margin-right: 610px !important;
+}
+
+.county-select-title {
+  margin-left: 635px;
+}
+
+.orangeRadio {
+  margin-left: 560px;
+}
+
+.county-selection {
+  font-size: 18px;
+}
+
+.sdRadio {
+  margin-left: 10px;
+}
+
+.fav-hist-toggle {
+  float: right;
+  border: #03045E solid 3px;
+  border-radius: 10px;
+  background-color: #03045E;
+  color: white;
+  height: 40px;
+  width: 100%;
+  margin-right: 50px;
+}
+
+.fav-hist-toggle:hover {
+  background-color: transparent;
+  color: #03045E;
+  cursor: pointer;
+}
+
+.session-search-container {
+  margin-top: 100px !important;
+}
+
+.rearch-area {
+  text-align: center;
+}
+
+.sessions-divider {
+  color: black !important;
+  opacity: 1 !important;
+  margin-top: 50px !important;
+}
+
+.session-message {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sessions-content-container {
+  margin-top: 50px;
+  border: solid white;
+  border-radius: 10px;
+  opacity: .8;
+}
+
+.sessions-main-display {
+  justify-content: center;
+}
+
+.ui.card {
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+.vote-area {
+  padding-top: 15px;
+}
+
+.favorite {
+  z-index: 3;
+  position: absolute;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.favorite:hover {
+  color: gold;
+  cursor: pointer;
+}
+
+.delete {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+.delete:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.no-data-message {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.session-data {
+  border-bottom: none;
+  height: 0px;
+}
+
+.pref-nav-btns {
+  display: inline;
+  border: #03045E solid 3px;
+  border-radius: 10px;
+  background-color: #03045E;
+  color: white;
+  height: 40px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 425px;
+}
+
+.pref-nav-btns:hover {
+  background-color: transparent;
+  color: #03045E;
+  cursor: pointer;
+}
+
+.no-wave-message {
+  font-size: 20px;
+  text-align: center;
+}
+
+.no-wave-btn {
+  margin-left: 266px;
+}
+
+.created-session-message {
+  padding: 100px 0px 0px 450px !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .toggle-btn-container {
+    margin-left: 10px;
+  }
+  .sessions-title {
+    font-size: 60px;
+  }
+  .wave-near-me {
+    width: 300px !important;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 24px !important;
+  }
+  .fav-hist-toggle {
+    width: 145px;
+    margin-right: 100px;
+  }
+  .session-message {
+    width: 350px;
+  }
+  .county-select-title {
+    margin-left: 86px;
+  }
+  .orangeRadio {
+    margin-left: 25px;
+  }
+  .find-by-county-select {
+    margin-right: 70px !important;
+  }
+  .nothing-rec-message {
+    font-size: 10px;
+  }
+  .ui.card {
+    margin-left: 0px;
+  }
+  .vote-area {
+    height: 50px;
+    padding: 0px 0px 0px 0px !important;
+  }
+  .star.icon {
+    padding-left: 25px;
+  }
+  .no-wave-display {
+    width: 350px;
+  }
+  .no-wave-btn {
+    margin-left: 60px;
+  }
+  .created-session-message {
+    margin: 100px 0px 0px 8px !important;
+  }
+}

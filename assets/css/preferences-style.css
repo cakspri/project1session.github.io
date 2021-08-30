@@ -1,0 +1,174 @@
+body {
+	background: url('../background-img.jpg') no-repeat center center fixed;
+}
+
+.toggle-btn-container {
+	z-index: 2;
+	position: absolute;
+	margin: 30px 0px 0px 20px;
+}
+
+.title-divider {
+	z-index: 0;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background-color: #03045E;
+	margin-top: 0px;
+}
+
+i.icon {
+	height: 40px;
+	width: 40px;
+}
+
+.sidebar-toggler {
+	z-index: 2;
+	position: absolute;
+	color: white;
+	background-color: #03045E;
+	padding-top: 6px;
+	border-radius: 10px;
+}
+
+.sidebar-toggler:hover {
+	cursor: pointer;
+}
+
+.ui.inverted.menu {
+	background-color: #03045E;
+}
+
+.session-page-title {
+	padding-top: 40px;
+}
+
+.sessions-title {
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.pref-btn {
+	border: #03045E solid 3px;
+	border-radius: 10px;
+	background-color: #03045E;
+	color: white;
+	height: 40px;
+	width: 250px;
+	margin: 50px 0px 0px 460px;
+}
+
+.pref-btn:hover {
+	background-color: transparent;
+	color: #03045E;
+	cursor: pointer;
+}
+
+.session-search-container {
+	margin-top: 30px;
+}
+
+.search-area {
+	text-align: center;
+}
+
+.sessions-content-container {
+	margin-top: 50px;
+	border: solid white;
+	border-radius: 10px;
+	opacity: .8;
+}
+
+.user-input-container {
+	font-size: 900x;
+	font-weight: bold;
+	text-align: center;
+}
+
+.uiplaceholder.segment {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.ui.placeholder.segment {
+	margin-top: 100px;
+}
+
+.ui .button {
+	background-color: #03045E;
+	color: white !important;
+}
+
+.pref-nav-btns {
+	display: inline;
+	border: #03045E solid 3px;
+	border-radius: 10px;
+	background-color: #03045E;
+	color: white;
+	height: 40px;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 425px;
+}
+
+.pref-nav-btns:hover {
+	background-color: transparent;
+	color: #03045E;
+	cursor: pointer;
+}
+
+.pref-output {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.user-output {
+	font-weight: lighter;
+	padding-left: 30px;
+	float: right;
+}
+
+.no-pref {
+	font-size: 30px;
+	margin-bottom: 5px !important;
+	text-align: center;
+}
+
+.set-pref-btn {
+	font-size: 20px;
+	width: 200px;
+	margin-left: 480px;
+}
+
+.session-message {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.preferences-title {
+	text-align: center;
+	font-size: 60px;
+	padding-top: 30px;
+	color: white;
+}
+
+@media only screen and (max-width: 576px) {
+	.session-message {
+		width: 350px;
+	}
+	.pref-nav-btns {
+		margin-left: 0px;
+	}
+	.change-pref {
+		margin-top: 30px;
+	}
+	.preferences-title {
+		font-size: 48px;
+		padding-left: 0px;
+	}
+	.set-pref-btn {
+		margin-left: 60px !important;
+	}
+}
