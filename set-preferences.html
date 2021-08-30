@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Session - Set Preferences</title>
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/session-icon.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<link rel="stylesheet" href="./assets/css/preferences-style.css">
+	<link rel="stylesheet" href="./assets/css/set-preferences.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="toggle-btn-container">
+			<i class="big bars icon sidebar-toggler" id="sidebar-toggler"></i>
+		</div>
+		<div class="ui left demo vertical inverted sidebar labeled icon menu sidebar-custom" id="sidebar">
+			<a class="item" href="index.html">
+				<i class="home icon"></i>
+				Home
+			</a>
+			<a class="item" href="sessions.html">
+				<i class="map marker alternate icon"></i>
+				Sessions
+			</a>
+			<a class="item" href="preferences.html">
+				<i class="thumbs up icon"></i>
+				Preferences
+			</a>
+		</div>
+
+		<div class="title-divider"></div>
+		
+		<section class="ui three column grid container session-page-title">
+			<div class="row">
+				<div class="three wide column"></div>
+				<div class="ten wide column set-pref-title">
+					Set Preferences
+				</div>
+				<div class="three wide column">
+				</div>
+			</div>
+		</section>
+
+		<section class="ui three column grid user-input-container">
+			<div class="three wide column"></div>
+			<div class="ten wide column segment">
+				<div class="row">
+					<div class="five wide column set-titles" style="margin-top: 50px;">
+						Wave Height:
+					</div>
+					<div class="five wide column">
+						<input type="radio" name="user_wave_height"id="height_low" value="height_low">
+						<label for="height_low" class="set-responses">0-3 ft</label>
+						<input type="radio" class="set-pref-radio" name="user_wave_height"id="height_mid" value="height_mid">
+						<label for="height_mid" class="set-responses">3-6 ft</label><br>
+						<input type="radio" class="set-pref-radio" name="user_wave_height"id="height_high" value="height_high">
+						<label for="height_high" class="set-responses">6-9 ft</label>
+						<input type="radio" class="set-pref-radio" name="user_wave_height"id="height_overhead" value="height_overhead">
+						<label for="height_overhead" class="set-responses">9+ ft</label>
+					</div>
+				</div>
+				<div class="row"><hr></div>
+				
+				<div class="row">
+					<div class="five wide column set-titles">
+						Water Temp:
+					</div>
+					<div class="five wide column">
+							<input type="radio" class="set-pref-radio" name="user_water_temp" id="polarBear" value="polarBear">
+							<label for="polarBear" class="set-responses">You Are A Polar Bear (Below 52)</label><br>
+							<input type="radio" class="set-pref-radio" name="user_water_temp" id="cold" value="cold">
+							<label for="cold" class="set-responses">Cold (52 - 62)</label><br>
+							<input type="radio" class="set-pref-radio" name="user_water_temp" id="warm" value="warm">
+							<label for="warm" class="set-responses">Warm (63 - 73)</label><br>
+							<input type="radio" class="set-pref-radio" name="user_water_temp" id="tropical" value="tropical">
+							<label for="tropical" class="set-responses">Tropical (72+)</label>
+					</div>
+				</div>
+				<div class="row"><hr></div>
+				
+				<div class="row">
+					<div class="five wide column set-titles">
+						Price Range:
+					</div>
+					<div class="five wide column">
+						<input type="radio" class="set-pref-radio" name="user_price_range" id="$" value="$">
+						<label for="$" class="set-responses">$</label>
+						<input type="radio" class="set-pref-radio" name="user_price_range" id="$$" value="$$">
+						<label for="$$" class="set-responses">$$</label><br>
+						<input type="radio" class="set-pref-radio" name="user_price_range" id="$$$" value="$$$">
+						<label for="$$$" class="set-responses">$$$</label>
+						<input type="radio" class="set-pref-radio" name="user_price_range" id="$$$$" value="$$$$">
+						<label for="$$$$" class="set-responses">$$$$</label>
+					</div>
+				</div>
+				<div class="row"><hr></div>
+				
+				<div class="row">
+					<div class="five wide column set-titles">
+						Food Type:
+					</div>
+					<div class="five wide column">
+						<label for="food-types"></label>
+						<select name="food-names" id="food-names">
+							<option value="default" class="set-responses">Default</option>
+							<option value="italian" class="set-responses">Italian</option>
+							<option value="american" class="set-responses">American</option>
+							<option value="korean" class="set-responses">Korean</option>
+							<option value="japanese" class="set-responses">Japanese</option>
+							<option value="chinese" class="set-responses">Chinese</option>
+						</select>
+					</div>
+				</div>
+				<div class="row"></div>
+				<button class="pref-btn save-pref-btn" id="save-preferences">
+					Save
+				</button>
+			</div>
+			<div class="three wide column"></div>
+		</section>
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="./assets/js/set-preferences-script.js"></script>
+</body>
+
+</html>

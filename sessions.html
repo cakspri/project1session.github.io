@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session - Sessions</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/session-icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/sessions-style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="ui modal close-modal" id="created-session-message">
+      <i class="close icon"></i>
+      <div class="header">
+        Session Created!
+      </div>
+      <div class="image content">
+        <div class="description">
+          <div class="ui header">Head over to history to view your Session!</div>
+          <p style="text-align: center;">Enjoy the surf!</p>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="ui positive right labeled icon button close-modal" style="text-align: center;">
+          Awesome!
+        </div>
+      </div>
+    </div>
+
+    <div class="toggle-btn-container">
+      <i class="big bars icon sidebar-toggler" id="sidebar-toggler"></i>
+    </div>
+    <div class="ui left demo vertical inverted sidebar labeled icon menu sidebar-custom" id="sidebar">
+      <a class="item" href="index.html">
+        <i class="home icon"></i>
+        Home
+      </a>
+      <a class="item" href="sessions.html">
+        <i class="map marker alternate icon"></i>
+        Sessions
+      </a>
+      <a class="item" href="preferences.html">
+        <i class="thumbs up icon"></i>
+        Preferences
+      </a>
+    </div>
+
+    <div class="title-divider"></div>
+    
+    <section class="ui three column stackable grid session-page-title">
+      <div class="row">
+        <div class="three wide column"></div>
+        <div class="ten wide column sessions-title">
+          Sessions
+        </div>
+        <div class="three wide column">
+        </div>
+      </div>
+    </section>
+
+    <section class="ui three column stackable grid session-search-container">
+      <div class="row">
+        <div class="two wide column"></div>
+        <div class="twelve wide column">
+          <div class="search-area" id="search-area">
+            <button class="fav-hist-toggle wave-near-me" id="wave-near-me">Find a Wave Near Me!</button>
+          </div>
+        </div>
+        <div class="two wide column"><button class="fav-hist-toggle" id="fav-hist-toggle">Favorite Sessions</button></div>
+      </div>
+    </section>
+
+    <section class="ui three column stackable grid very sessions-main-display"id="sessions-display"></section>
+
+    <h4 class="ui horizontal divider header sessions-divider" id="sessions-divider">
+      <i class="history icon"></i>
+      History
+    </h4>
+
+
+
+      <div class="session-message" id="session-message">
+        <div class="ui very padded segment sessions-main-display" id="sessions-main-display"></div>
+      </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./assets/data/beaches.js"></script>
+  <script src="./assets/js/sessions-script.js"></script>
+</body>
+
+</html>
