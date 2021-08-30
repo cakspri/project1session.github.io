@@ -16,6 +16,6 @@ Two APIs are used to pull surf and food data:
 
 ## Deployed Site
 
-[Session](https://sequint.github.io/session/)
+[Session](https://cakspri.github.io/project1session.github.io/)
 
 ![ScreenShot](/assets/README-screenshot.png)
